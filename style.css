@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Initial settings */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+}
+
+:root {
+    /* Color */
+    --clr-primary-soft-blue: hsl(215, 51%, 70%);
+    --clr-primary-cyan: hsl(178, 100%, 50%);
+    --clr-neutral-main-bg: hsl(217, 54%, 11%);
+    --clr-neutral-card-bg: hsl(216, 50%, 16%);
+    --clr-neutral-line: hsl(215, 32%, 27%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    /* Gap */
+    --gap: 2rem;
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    background: var(--clr-neutral-main-bg);
+}
+
+.nft-preview:hover,
+.title:hover,
+.author-name:hover {
+    cursor: pointer;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+
+    padding: var(--gap);
+    max-width: 35rem;
+
+    border-radius: 10px;
+    
+    background: var(--clr-neutral-card-bg);
+    box-shadow: -5px 15px 20px 0px rgba(0,0,0,0.25);
+}
+
+.nft-preview {
+    background: url('images/image-equilibrium.jpg') no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    aspect-ratio: 1;
+
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.nft-preview:hover .eye-icon{
+    opacity: 1;
+}
+
+.eye-icon {
+    background: hsla(178, 100%, 50%, .5) url('images/icon-view.svg') no-repeat center;
+    opacity: 0;
+
+    width: 100%;
+    aspect-ratio: 1;
+    transition: .1s ease-in-out;
+}
+
+.title {
+    color: var(--clr-neutral-white);
+    font-size: 2.5rem;
+}
+
+.title:hover {
+    color: var(--clr-primary-cyan);
+}
+
+.description {
+    margin-top: var(--gap);
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.8rem;
+    color: var(--clr-primary-soft-blue);
+    font-weight: 400;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.eth-info, .time-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.eth-format {
+    color: var(--clr-primary-cyan);
+}
+
+hr {
+    width: 100%;
+    color: var(--clr-neutral-line);
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+.author-avatar {
+    border: 1.5px solid var(--clr-neutral-white);
+    border-radius: 50%;
+}
+
+.author-name {
+    color: var(--clr-neutral-white);
+}
+
+.author-name:hover {
+    color: var(--clr-primary-cyan);
+}
+
+footer {
+    display: none;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
