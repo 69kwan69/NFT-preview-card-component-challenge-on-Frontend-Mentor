@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/nft-preview-card-component-6l6PAKFOaE)
+- Live Site URL: [Github](https://69kwan69.github.io/NFT-preview-card-component-challenge-on-Frontend-Mentor/)
 
 ### What I learned
 
-Welcome back, Kwan
+Welcome back, Kwan.
 Welp, it's been over 4 months since I stopped doing Frontend Mentor's challenges, and now I'm back. I still got the gist of the order and the thinking process when it comes to card design. That's quite a good start over.
 
 ## Author
